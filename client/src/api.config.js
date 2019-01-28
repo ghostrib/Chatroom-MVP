@@ -1,0 +1,3 @@
+const apiKey = 'trnsl.1.1.20180314T143847Z.44a504d0e79207e8.9e99a9d44438f493ea6c8990f329f29281166396';
+
+module.exports = apiKey;

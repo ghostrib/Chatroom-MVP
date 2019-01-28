@@ -1,34 +1,143 @@
-.App {
-  text-align: center;
+body {
+  padding: 2%;
+  background-image: url('./images/back@2X.png')
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#container {
+  border-style: groove;
+  border-width: 3px;
+  border-color: rgb(26, 32, 43); 
+  border-radius: 10px; 
+  height: 500px;
+  width: 64%;
+  overflow-y: auto;
+  padding: 2%;
+  /* background-image: url('./images/Blah_blah_blah.jpg'); */
+  /* background-color: white; */
+  background: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)), url('./images/Blah_blah_blah.jpg') center no-repeat;
+  background-size: cover;
+  align-self: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+}
+
+.modal-main {
+  padding: 40px;
+  position:fixed;
+  background: white;
+  width: 40%;
+  height: 40%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: solid 6px rgb(6, 73, 17);
+  border-radius: 8px;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+span {
+  padding: 20px;
+  margin: 10px
+}
+
+.login-input {
+  width: 60%;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 120%;
+  
+}
+
+.login-header {
+  font-size: 40px;
+  /* text-align: center; */
+}
+
+#login-button {
+  background-color: rgb(6, 73, 17);
   color: white;
-  min-height: 50%;
-  padding-bottom: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin: 20px;
+  margin-left: 0px;
+  float: left;
 }
 
-.App-link {
-  color: #61dafb;
+#login-button:hover {
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messages {
+  font-size: 20px;
 }
+
+.username {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: -10px;
+}
+
+#send-button {
+  background-color: rgb(6, 73, 17);
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 14px;
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+#send-button:hover {
+  background-color: green;
+}
+
+#text-input {
+  width: 60%;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 160%;
+  margin-right: 2%;
+  height: 40px;
+}
+
+#language-select {
+  font-size: 14px;
+}
+
+/* select {
+  width: 200px;
+  height: 60px;
+  background-color: blue;
+  color: white;
+}
+
+optgroup {
+  font-size: 20px;
+} */
+
+/* .react-select {
+  z-index: -1;
+} */
